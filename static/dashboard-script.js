@@ -165,3 +165,15 @@ fetchDataAndRenderChart(
     // ... other options can be added as needed
   })
 );
+
+function toggleTheme() {
+  // Select the <link> element
+  let theme = document.getElementById('theme');
+
+  // Toggle between light and dark mode
+  if (theme.getAttribute('href') == '../static/dashboard_stylesheet.css') {
+    theme.setAttribute('href', '../static/dashboard_stylesheet_dark.css');
+  } else {
+    theme.setAttribute('href', '../static/dashboard_stylesheet.css');
+  }
+  }

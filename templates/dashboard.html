@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
-    <link rel="stylesheet" href="../static/dashboard_stylesheet.css">
+    <link id="theme" rel="stylesheet" href="../static/dashboard_stylesheet.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     </header>
 
     <div class='container'>
-
+        <button onclick="toggleTheme()">Light/Dark Mode</button>
         <section>
             <div class="chart-row">
                 <div class="chart-container full-width">
